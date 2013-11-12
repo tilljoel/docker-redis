@@ -3,6 +3,6 @@
 Specify a dir to use for data, logs and configuration
 
 ```bash
-run -v /root/redisdata:/data tilljoel/redis /bin/bash -c ./generate_config.sh
-run -d -v /root/redisdata:/data tilljoel/redis
+docker run -v /root/redisdata:/data tilljoel/redis /bin/bash -c ./generate_config.sh
+docker run -d -v /root/redisdata:/data tilljoel/redis
 ```
